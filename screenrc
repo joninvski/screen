@@ -1,0 +1,75 @@
+# Set the escape sequence to just a single backtick instead of '^a'. FTFW!
+escape ^t^t
+
+# Don't display the copyright page
+startup_message off         # default on
+
+# Change default scrollback value for new windows
+defscrollback 1000          # default 100
+
+# don't detach by on your own
+autodetach off              # default on
+
+hardstatus      on
+hardstatus      alwayslastline
+hardstatus      string "%{.Wb}.: %-w%{.RW}%n %t%{-}%+w :. %=[%Y-%m-%d(%D) %02c]"
+caption         splitonly "%{.BW} >> %n %t"
+
+
+# Time a message is displayed if screen is not disturbed by other activity. 
+msgwait 3                  # default 5
+
+# remove some key bindings
+bind k
+bind W
+bind ^k
+bind .
+bind ^\
+bind \\
+bind ^h
+bind h
+
+# make them safer
+bind 'K' kill
+bind 'W' windowlist
+
+# Vim movement for regions
+bind j focus down
+bind k focus up
+bind t focus top
+bind b focus bottom
+bind s split
+bind x remove
+bind m monitor
+
+# Bind Control-PageDown to 'next', Control-PageUp to 'prev'
+# to navigate between windows
+bindkey ^[[5;5~ prev
+bindkey ^[[6;5~ next
+
+# Bind arrow keys Control-Down to 'next', Control-Up to 'prev'
+# to navigate between windows
+bindkey ^[[1;5A focus up
+bindkey ^[[1;5B focus down
+
+bindkey ^[[1;5D resize -1
+bindkey ^[[1;5C resize +1
+
+# Resize the current region. The space will be removed from or added to 
+# the region below or if there's not enough space from the region above.
+bind = resize =
+bind + resize +3
+bind - resize -3
+
+# Apps I use a lot
+# open vim
+bind v screen -t 'vim' 0 vim
+# open w3m 
+bind l screen -t 'w3m' 4 w3m http://google.com/
+
+# screen -t irc /bin/sh -c "irssi;bash"
+# screen -t home
+
+bind ^p eval "only" "split" "focus down" "resize 15" "screen -t ipython 1 ipython" "select stack" "focus top" "select main"
+
+screen -t main 0 
