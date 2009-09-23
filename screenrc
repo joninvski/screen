@@ -4,7 +4,7 @@ escape ^t^t
 startup_message off         # default on
 
 # Change default scrollback value for new windows
-defscrollback 1000          # default 100
+defscrollback 100000          # default 100
 
 # don't detach by on your own
 autodetach  on             # default on
@@ -16,6 +16,11 @@ hardstatus      off
 
 # Time a message is displayed if screen is not disturbed by other activity. 
 msgwait 3                  # default 5
+
+#Enter the scrollback copy mode
+bind ^f copy
+bind f copy
+bindkey -k k7 copy  # F7  | Enter copy/scrollback mode
 
 # remove some key bindings
 bind k      #Destroy corrent window
