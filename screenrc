@@ -21,6 +21,8 @@ msgwait 3                  # default 5
 bind ^f copy
 bind f copy
 bindkey -k k7 copy  # F7  | Enter copy/scrollback mode
+bind ^p paste
+bind p paste
 
 # remove some key bindings
 bind k      #Destroy corrent window
