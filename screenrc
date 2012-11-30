@@ -1,5 +1,10 @@
 escape ^t^t
 
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+
+
 # Don't display the copyright page
 startup_message off         # default on
 
