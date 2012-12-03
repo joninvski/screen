@@ -29,10 +29,10 @@ setenv SSH_AUTH_SOCK "$HOME/.screen/ssh-auth-sock.$HOSTNAME"
 # You can personalize the last line here
 #
 # Caption background is black
-caption always '%{Yk} %H %{k}|%{G} %l %{k}| %{W} %-Lw%{+u}%n %t%{-u}%+Lw | %= %{k} | %{Y} %LD %Y-%02m-%02d %0c'
+# caption always '%{Yk} %H %{k}|%{G} %l %{k}| %{W} %-Lw%{+u}%n %t%{-u}%+Lw %= %{k} | %{Y} %LD %Y-%02m-%02d %0c'
 #
 # Caption background is blue
-#caption always '%{Yb} %H %{k}|%{G} %l %{k}| %{W} %-Lw%{+u}%n %t%{-u}%+Lw | %= %{k} | %{Y} %LD %Y-%02m-%02d %0c'
+caption always '%{Yb} %H %{k}|%{G} %l %{k}| %{W} %-Lw%{+u}%n %t%{-u}%+Lw %= %{k} | %{Y} %LD %Y-%02m-%02d %0c '
 #
 ############################################
 
