@@ -1,3 +1,2 @@
 all:
-	cd ~
-	ln -s screen/screenrc ~/.screenrc
+	ln -fs ${HOME}/screen/screenrc ${HOME}/.screenrc
