@@ -1,2 +1,2 @@
 all:
-	ln -fs ${HOME}/screen/screenrc ${HOME}/.screenrc
+	ln -fs `pwd`/screen/screenrc ${HOME}/.screenrc
